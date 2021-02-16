@@ -1,0 +1,3434 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Title and description ================================================== -->
+    
+              <meta name="csrf-param" content="authenticity_token">
+              <meta name="csrf-token" content="X3Jk4mC50uCELnHu6GGAlGFZHNi1rFv98KUm0o0xJQKZ72aDl43R863UhED2p7vvV0Mtobuyy5l5Wq5viGc79A==">
+            
+    <title>
+      
+        JomaClass | Data Structure & Algorithms
+      
+    </title>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="description" content="The Data Structure &amp; Algorithms course is for those who are interested in learning about stacks, queues, binary trees, graphs, sorting algorithms, and more." />
+    
+
+    <!-- Helpers ================================================== -->
+    <meta property="og:type" content="website">
+<meta property="og:url" content="https://www.jomaclass.com/data-structures-and-algorithms-sam">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta property="og:title" content="JomaClass | Data Structure & Algorithms">
+<meta name="twitter:title" content="JomaClass | Data Structure & Algorithms">
+
+
+<meta property="og:description" content="The Data Structure &amp; Algorithms course is for those who are interested in learning about stacks, queues, binary trees, graphs, sorting algorithms, and more.">
+<meta name="twitter:description" content="The Data Structure &amp; Algorithms course is for those who are interested in learning about stacks, queues, binary trees, graphs, sorting algorithms, and more.">
+
+
+
+    <link href="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/YG6W877RQaaNJwPukqfe_favicon.ico.png?v=2" rel="shortcut icon" />
+    <link rel="canonical" href="https://www.jomaclass.com/data-structures-and-algorithms-sam" />
+
+    <!-- CSS ================================================== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+      <link href="//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" media="screen" href="https://kajabi-app-assets.global.ssl.fastly.net/assets/core-f7e40ddd2a04af7e607891dd087d61ce7a93b6493cec6c449a830c0913c12b71.css" />
+    <link rel="stylesheet" media="screen" href="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3263477/assets/styles.css?16084822918323991" />
+    <link rel="stylesheet" media="screen" href="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3263477/assets/overrides.css?16084822918323991" />
+
+    <!-- Container Width ================================================== -->
+    
+    
+
+    <!-- Optional Background Image ======================================== -->
+    
+
+    <!-- Header hook ====================================================== -->
+    <script type="text/javascript">
+  var Kajabi = Kajabi || {};
+</script>
+<script type="text/javascript">
+  Kajabi.currentSiteUser = {
+    "id" : "-1",
+    "type" : "Guest"
+  };
+</script>
+<script type="text/javascript">
+  Kajabi.theme = {
+    activeThemeName: "Premier",
+    previewThemeId: null,
+    editor: false
+  };
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)
+},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-113477500-2', 'auto', {});
+ga('send', 'pageview');
+</script>
+<style type="text/css">
+  #editor-overlay {
+    display: none;
+    border-color: #2E91FC;
+    position: absolute;
+    background-color: rgba(46,145,252,0.05);
+    border-style: dashed;
+    border-width: 3px;
+    border-radius: 3px;
+    pointer-events: none;
+    cursor: pointer;
+    z-index: 10000000000;
+  }
+  .editor-overlay-button {
+    color: white;
+    background: #2E91FC;
+    border-radius: 2px;
+    font-size: 13px;
+    margin-left: -24px;
+    margin-top: -12px;
+    padding: 3px 10px;
+    text-transform:uppercase;
+    font-weight:bold;
+    letter-spacing:1.5px;
+
+    left: 50%;
+    top: 50%;
+    position: absolute;
+  }
+</style>
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.agent='plkajabi';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                                                                      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '664810937408766', {"ct":"","country":null,"em":"","fn":"","ln":"","pn":"","zp":""});
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=664810937408766&ev=PageView&noscript=1"
+/></noscript>
+
+  </head>
+  <body>
+    <div class="container container--main container--full">
+      <div class="content-wrap">
+        <div class="section-wrap section-wrap--top">
+          <div id="section-header" data-section-id="header"><!-- Header Variables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<style>
+  .header {
+    background: #000000;
+  }
+  
+  .header .logo--text, .header--left .header-menu a {
+    line-height: 40px;
+  }
+  .header .logo--image {
+    height: 40px;
+  }
+  .header .logo img {
+    max-height: 40px;
+  }
+  .announcement {
+      background: #222222;
+      color: #ffffff;
+    }
+  /*============================================================================
+    #Header User Menu Styles
+  ==============================================================================*/
+  .header .user__dropdown {
+    background: #fff;
+    top: 71px;
+  }
+  .header--center .user__dropdown {
+    top: 50px;
+  }
+  
+  /*============================================================================
+    #Header Responsive Styles
+  ==============================================================================*/
+  @media (max-width: 767px) {
+    .header .logo--text {
+      line-height: 40px;
+    }
+    .header .logo--image {
+      max-height: 40px;
+    }
+    .header .logo img {
+      max-height: 40px;
+    }
+    .header .header-ham {
+      top: 20px;
+    }
+  }
+</style>
+
+
+
+  <!-- Announcement Variables -->
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+<style>
+  .announcement {
+    background: ;
+    color: ;
+  }
+  a.announcement:hover {
+    color: ;
+  }
+</style>
+
+
+
+  <div class="header header--dark header--left" kjb-settings-id="sections_header_settings_background_color">
+    <div class="container">
+      
+        <a href="/" class="logo logo--image">
+          <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/b2eqIBn4SwmMcJe7af8f_Asset_310x.png" kjb-settings-id="sections_header_settings_logo"/>
+        </a>
+      
+        <div class="header-ham">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      <div kjb-settings-id="sections_header_settings_menu" class="header-menu">
+        
+          <ul class="nav navbar-nav" style="margin: 0; display: inline-block;">
+    <li class="dropdown" style="margin: 0;">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses</a>
+        <ul class="dropdown-menu pre-scrollable" style="overflow-y: auto">
+            <li><a href="https://www.jomaclass.com/programming-fundamentals">Programming Fundamentals with Python</a></li>
+            <li><a href="https://www.jomaclass.com/sql-data-analytics">SQL for Data Analytics</a></li>
+            <li><a href="https://www.jomaclass.com/data-structures-and-algorithms">Data Structures & Algorithms</a></li>
+        </ul>
+    </li>
+</ul>
+          
+            <a href="https://www.jomaclass.com/blog">All Videos</a>
+          
+            <a href="https://www.jomaclass.com/pages/contact">Contact Us</a>
+          
+            <a href="https://www.jomaclass.com/store">Get Access!</a>
+          
+        
+        
+        
+          <!-- User Dropdown Variables -->
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+
+  <span kjb-settings-id="sections_header_settings_language_login"><a href="/login">Login</a></span>
+
+
+        
+      </div>
+    </div>
+  </div>
+
+
+</div>
+          <div data-content-for-index data-dynamic-sections="index"><div id="section-1607550517601" data-section-id="1607550517601"><!-- Section Variables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+<style>
+  
+    .background-image--1607550517601 {
+      background-image: url(https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3263477/settings_images/1jm3pINUQfGJdCZan4sC_sam_miller.jpg);
+    }
+  
+  .section--1607550517601 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.7);
+  }
+  
+</style>
+
+
+
+  <div class="hero-background background-image background-image--1607550517601 ">
+
+  <div class="section section--hero section--middle section--dark section--small section--1607550517601 " kjb-settings-id="sections_1607550517601_settings_overlay">
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-md-8 btn__spacing btn__spacing--center">
+            <h1 kjb-settings-id="sections_1607550517601_settings_title">Welcome Sam Miller's viewers</h1>
+<div kjb-settings-id="sections_1607550517601_settings_text">
+  <p>First 100 people to use code &ldquo;<strong>SMALLPP</strong>&rdquo; will get 15% off the yearly membership!</p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /*============================================================================
+    #Individual CTA Style
+  ==============================================================================*/
+  .btn--solid.btn--1607550722780 {
+    background: #f1c40f !important;
+    border-color: #f1c40f !important;
+    color: #000000 !important;
+  }
+  .btn--solid.btn--1607550722780:hover {
+    color: #000000 !important;
+  }
+  .btn--outline.btn--1607550722780 {
+    border-color: #f1c40f !important;
+    color: #f1c40f !important;
+  }
+  .btn--outline.btn--1607550722780:hover {
+    color: #f1c40f !important;
+  }
+</style>
+<a href="#two-step" class="btn btn-cta btn--auto btn--solid btn--med btn--1607550722780" data-offset-number="" data-offset-period="seconds" data-event="" id="" kjb-settings-id="sections_1607550517601_blocks_1607550722780_settings_btn_action" target="">Get Access</a>
+
+
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div><div id="section-1526943152334" data-section-id="1526943152334"><!-- Section Variables -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+<style>
+  
+  .section--1526943152334 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.7);
+  }
+  
+</style>
+
+
+
+<div style="overflow:hidden">
+  <div class="hero-background background-image background-image--1526943152334 ">
+    <div id="wistia_n06gmrkdvl" class="wistia_embed backgroundVideo" data-src="n06gmrkdvl" data-img="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3006583/settings_images/vrYNqT6eRtqrglmBN0yF_vlcsnap-2020-11-10-18h27m34s701.png" data-blank="blank.jpg"></div>
+
+  <div class="section section--hero section--middle section--dark section--large section--1526943152334 " kjb-settings-id="sections_1526943152334_settings_overlay">
+    <div class="container">
+      <div class="row">
+        
+          <div class="col-md-8 btn__spacing btn__spacing--center">
+            <h1 kjb-settings-id="sections_1526943152334_settings_title"></h1>
+<div kjb-settings-id="sections_1526943152334_settings_text">
+  <p>JomaClass Presents</p>
+<h1>Data Structures &amp; Algorithms</h1>
+<p><span style="color: #e67e22;">(In progress:&nbsp;new videos every week!)</span></p>
+</div>
+
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+</div><div id="section-1604959182823" data-section-id="1604959182823"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+    .background-image--1604959182823 {
+      background-image: url(https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/SMoPEMfxTz2A2JLgWfFY_file.jpg);
+    }
+  
+  .section--1604959182823 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #000000;
+  }
+  
+  .section--link_list.section--dark.section--1604959182823 a, .section--link_list.section--light.section--1604959182823 a, .section--blog_posts.section--dark.section--1604959182823 a, .section--blog_posts.section--light.section--1604959182823 a, .section--feature.section--dark.section--1604959182823 a, .section--feature.section--light.section--1604959182823 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1604959182823  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1604959182823_settings_section_reveal">
+  <div class="section section--custom_content section--top section--left section--small section--dark section--1604959182823 " kjb-settings-id="sections_1604959182823_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1604960016485 {
+    text-align: ;
+  }
+  
+    .block-break--1604960016485 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+  <style>
+    .block--1604960016485 .video__wrapper {
+      background-image: url();
+    }
+  </style>
+
+
+<!-- Force Line Break -->
+<div class="block-break--1604960016485"></div>
+
+<div class="col-md-8 block--1604960016485">
+  <div class="video" kjb-settings-id="sections_1604959182823_blocks_1604960016485_settings_video">
+    <div class="video__wrapper">
+      
+        
+<script>
+  window._wq = window._wq || [];
+  _wq.push({"i4sxzcvfxq": JSON.parse('{"playerColor":"#2e91fc","autoPlay":false,"stillUrl":"https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3006583/settings_images/DDx5AKK8QqKCwBOwo5EL_file.jpg","resumable":true}')});
+</script>
+
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+
+<div class="kjb-video-responsive">
+  <div id="wistia_i4sxzcvfxq"
+    class="wistia_embed wistia_async_i4sxzcvfxq "
+    data-track-progress=""
+    data-tracked-percent="">&nbsp;</div>
+</div>
+
+      
+    </div>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1604960016485"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1604959401703 {
+    text-align: left;
+  }
+  
+    .block-break--1604959401703 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1604959401703"></div>
+
+<div class="col-md-4 block--1604959401703">
+  <div kjb-settings-id="sections_1604959182823_blocks_1604959401703_settings_code" class="fluid-video">
+    <style>
+.accordion-container-joma{
+    max-height: 400px;
+    overflow: scroll;
+}
+.accordion-joma {
+  background-color: #191D21;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  position: relative;
+}
+
+.active, .accordion-joma:hover {
+  background-color: #191D21; 
+}
+
+.panel-joma {
+  padding: 0 18px;
+  font-size: 14px;
+  display: none;
+  background-color: #191D21;
+  overflow: hidden;
+}
+.list-item-separator {
+    height: 1px;
+    border: none;
+    background-color: #272c33;
+    margin:0px;
+}
+.col-auto {
+   display: inline-block;
+}
+.duration-joma {
+  position: absolute;
+  color: #888;
+  top: 18px;
+  right: 18px;
+}
+.accordion-title-joma{
+font-weight:bold;
+}
+.panel-p {
+ margin-top: 0rem;
+}
+.video-title {
+ margin-right: 40px;
+}
+</style>
+<div class="accordion-title-joma">Browse Lessons</div>
+<div class="accordion-container-joma">
+<div class="accordion-joma"><div class="video-title">1. Introduction to Data Structures and Algorithms </div><div class="duration-joma">12:03</div></div> 
+<div class="panel-joma">
+  <p class="panel-p">What exactly is an algorithm? In this lesson you'll learn that you use algorithms every day in your daily lives. We also go through what the difference between an Abstract Data Type (ADT) and a data structure is.</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">2. Time Complexity and Asymptotic Analysis </div><div class="duration-joma">10:20</div></div>
+<div class="panel-joma">
+  <p class="panel-p">We learn about the big O notation and the different time complexities and why they matter more than just the time it takes to execute a program.</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">3. Understanding the Memory Model </div><div class="duration-joma">6:12</div></div>
+<div class="panel-joma">
+  <p class="panel-p">We quickly go over what pointers are and how addresses work in memory. We also talk about bits and bytes and how that becomes different data types</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">4. List ADT: Array Implementation </div><div class="duration-joma">8:19</div></div>
+<div class="panel-joma">
+  <p class="panel-p">The List is a collection of elements that are sequenced. We'll try to implement it using bare C-arrays.</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">5. List ADT: Dynamic Arrays </div><div class="duration-joma">16:32</div></div>
+<div class="panel-joma">
+  <p class="panel-p">To implement the List, we need to dynamically allocate more memory for our array so we can put more elements in our list. How do we do that in the most efficient way?</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">6. List ADT: Linked List Implementation </div><div class="duration-joma">10:16</div></div>
+<div class="panel-joma">
+  <p class="panel-p">Let's try using another data structure to implement the list. What are the pros and cons of using a LinkedList instead of an array?</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">7. List ADT: Linked List Implementation 2 </div><div class="duration-joma">6:43</div></div>
+<div class="panel-joma">
+  <p class="panel-p">We continue coding the implementation of the List ADT using LinkedLists. How do we optimize this implementation to reduce the time complexity of our operations?</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">8. Stack ADT </div><div class="duration-joma">12:45</div></div>
+<div class="panel-joma">
+  <p class="panel-p">The stack is a very common ADT to use especially when implementing recursive algorithms iteratively or depth first search algorithms. We will teach you different ways of implementing a stack and the trade-offs between them.</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">9. Queue ADT </div><div class="duration-joma">7:54</div></div>
+<div class="panel-joma">
+  <p class="panel-p">The queue is like the opposite of the stack. Instead of being first in last out, it's a first in first out collection of elements. It's very useful for algorithms like Breadth first search on graphs.</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">10. Double-Ended Queue </div><div class="duration-joma">4:32</div></div>
+<div class="panel-joma">
+  <p class="panel-p">What is we can enqueue and dequeue from both the front and the back? What would we need to do in order to be able to do those operations in constant time? The key is node augmentation. By adding a few more fields in your Node structure, you can do so much more. This will be important for implementing Trees and Graphs.</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">11. Tree, Binary Tree, BST
+</div><div class="duration-joma">4:39</div></div>
+<div class="panel-joma">
+  <p class="panel-p">Trees are one of the most important data structures in computer science because they allow you to store data in a hierarchical structure. This allows you to retrieve items more quickly than just linearly scanning through a list or array. We’re going to learn about the difference between Tree, Binary Tree, and Binary Search Tree.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">12. Binary Search Tree: Implementation
+</div><div class="duration-joma">9:01</div></div>
+<div class="panel-joma">
+  <p class="panel-p">Binary Search Trees allow us to search for values in a collection in O(log(n)) time which is very efficient. We are going to learn how to implement a BST using nodes.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">13. Binary Search
+</div><div class="duration-joma">6:05</div></div>
+<div class="panel-joma">
+  <p class="panel-p">Now that you learned about binary search trees, you’ll learn that you can actually perform a binary search on an ordinary array. We go through a guessing game and compare that with a binary search which will show you how common you actually perform binary searches in your day to day life.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">14. Hash Tables and Dictionary ADT
+</div><div class="duration-joma">9:53</div></div>
+<div class="panel-joma">
+  <p class="panel-p">Hash tables are very useful for implementing dictionaries. Dictionary allows you to get a value based on a key. With hash tables, you can retrieve a value given a key in O(1) time. We’ll teach you how to implement a hash table using arrays and linked lists.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">15. Heap and Priority Queue ADT
+</div><div class="duration-joma">TBD</div></div>
+<div class="panel-joma">
+  <p class="panel-p">Priority Queues are like queues but instead of dequeuing the first element you inserted, you dequeue the element with the highest priority. How would you implement that? You will learn what a heap is and how that data structure is perfect for implementing a priority queue.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">16. Sorting Algorithms: Selection Sort & Quicksort
+</div><div class="duration-joma">10:00</div></div>
+<div class="panel-joma">
+  <p class="panel-p">There are multiple sorting algorithms and they both have their pros and cons. Selection sort is one of the most simple sorting algorithms but it has high time complexity. You will also learn to implement Quicksort which is used in many libraries.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">17. Sorting Algorithms: Merge Sort & Heapsort
+</div><div class="duration-joma">TBD</div></div>
+<div class="panel-joma">
+  <p class="panel-p">In this lesson, you’ll learn how to implement merge sort and heapsort, which are both O(nlogn) algorithms. We will then compare all the sorting algorithms we’ve learned and look at their advances and disadvantages.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">18. Graph
+</div><div class="duration-joma">4:43</div></div>
+<div class="panel-joma">
+  <p class="panel-p">You will learn what graphs are and how they are useful in computer science. You will learn about different types of graphs like undirected vs directed, weighted vs unweighted, and how graphs are related to trees.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">19. Graph Representation: Edge List, Adjacency Matrix, and Adjacency Lists
+</div><div class="duration-joma">11:23</div></div>
+<div class="panel-joma">
+  <p class="panel-p">There are many ways of representing a graph in your programs. Each of them has its own advantages and disadvantages. We’ll be learning about the Edge list, Adjacency Matrix, and Adjacency lists.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">20. Graph: Breadth-first Search
+</div><div class="duration-joma">5:59</div></div>
+<div class="panel-joma">
+  <p class="panel-p">There are many ways of exploring a graph. The two main ways are the breadth-first search (BFS) and depth-first search (DFS). In this lesson, we’ll be learning how to write a BFS function.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+<div class="accordion-joma"><div class="video-title">21. Graph: Depth-first Search
+</div><div class="duration-joma">7:09</div></div>
+<div class="panel-joma">
+  <p class="panel-p">The second way of exploring a graph is to perform a depth-first search (DFS). We’ll be learning how to write a depth-first search function using recursion.
+</p>
+</div>
+<hr class="list-item-separator mc-m-0">
+
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion-joma");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1604959401703"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605019220871 {
+    text-align: left;
+  }
+  
+    .block-break--1605019220871 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605019220871"></div>
+
+<div class="col-md-8 block--1605019220871">
+  <div kjb-settings-id="sections_1604959182823_blocks_1605019220871_settings_text">
+    <p>Data Structures and Algorithms is one of the most sought after topics in computer science. A deep understanding of DS&amp;A separates the top programmers from others. This is probably why most coding interviews will ask you to implement various algorithms that have to leverage these data structures. We teach this course with the best visualizations and animations so you can truly understand the concepts and develop a strong intuition for it.</p>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605019220871"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605019627522 {
+    text-align: center;
+  }
+  
+    .block-break--1605019627522 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605019627522"></div>
+
+<div class="col-md-4 block--1605019627522">
+  <div kjb-settings-id="sections_1604959182823_blocks_1605019627522_settings_code" class="fluid-video">
+    <style>
+.selling-info-warper {
+}
+.selling-info-item {
+   display: inline-block;
+   width: 100px;
+}
+.selling-info-icon{
+   width: 50px;
+}
+.selling-info-title{
+   color: #999;
+   font-size: 13px;
+}
+.selling-info-subtitle{
+ font-weight: bold;
+}
+</style>
+
+<div class="selling-info-warper">
+<div class="selling-info-item">
+              <div class="selling-info-icon-container">
+                <img src="//cdn.shopify.com/s/files/1/0267/2630/1768/t/5/assets/im-play-gray.png?v=2279085458739766080" alt="" class="selling-info-icon">
+              </div>
+              <div class="selling-info-icon-container">
+                <div class="selling-info-title">Recorded</div>
+<div class="selling-info-subtitle">TBD</div>
+              </div>
+            </div>
+<div class="selling-info-item">
+              <div class="selling-info-icon-container">
+                <img src="//cdn.shopify.com/s/files/1/0267/2630/1768/t/5/assets/im-clock-gray.png?v=15659801649721660753" alt="" class="selling-info-icon">
+              </div>
+              <div class="selling-info-icon-container">
+                <div color="#858a8d" class="selling-info-title">Run time</div>
+<div class="selling-info-subtitle">TBD</div>
+              </div>
+            </div>
+<div class="selling-info-item">
+                <div class="selling-info-icon-container">
+                  <img src="//cdn.shopify.com/s/files/1/0267/2630/1768/t/5/assets/im-kit-gray.png?v=9723949884839945399" alt="" class="selling-info-icon">
+                </div>
+                <div class="selling-info-icon-container">
+                <div color="#858a8d" class="selling-info-title">Difficulty</div>
+<div class="selling-info-subtitle">Intermediate</div>
+                </div>
+              </div>
+</div>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605019627522"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605031906268 {
+    text-align: center;
+  }
+  
+    .block-break--1605031906268 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605031906268"></div>
+
+<div class="col-md-12 block--1605031906268">
+  <div kjb-settings-id="sections_1604959182823_blocks_1605031906268_settings_code" class="fluid-video">
+    <style>
+hr {
+    border: 0;
+    height: 1px;
+    background: #666;
+}
+</style>
+<hr>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605031906268"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605031634056 {
+    text-align: left;
+  }
+  
+    .block-break--1605031634056 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605031634056"></div>
+
+<div class="col-md-8 block--1605031634056">
+  <div kjb-settings-id="sections_1604959182823_blocks_1605031634056_settings_text">
+    <h4>Prerequisites:</h4>
+<ul>
+<li>Know what a pointer and memory addresses are</li>
+<li>Proficient in at least one programming language</li>
+<li>Have a good&nbsp;understanding of <a href="/programming-fundamentals">Programming Fundamentals</a></li>
+</ul>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605031634056"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605039643487 {
+    text-align: center;
+  }
+  
+    .block-break--1605039643487 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605039643487"></div>
+<div class="col-md-4 block--1605039643487">
+  
+    <div kjb-settings-id="sections_1604959182823_blocks_1605039643487_settings_text">
+      <h3><strong>Enroll Today</strong></h3>
+<p><strong>JomaClass is $8/month (billed annually)</strong></p>
+    </div>
+  
+  <div kjb-settings-id="sections_1604959182823_blocks_1605039643487_settings_cta">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /*============================================================================
+    #Individual CTA Style
+  ==============================================================================*/
+  .btn--solid.btn--1605039643487 {
+    background: #f1c40f !important;
+    border-color: #f1c40f !important;
+    color: #000000 !important;
+  }
+  .btn--solid.btn--1605039643487:hover {
+    color: #000000 !important;
+  }
+  .btn--outline.btn--1605039643487 {
+    border-color: #f1c40f !important;
+    color: #f1c40f !important;
+  }
+  .btn--outline.btn--1605039643487:hover {
+    color: #f1c40f !important;
+  }
+</style>
+<a href="#two-step" class="btn btn-cta btn--auto btn--solid btn--med btn--1605039643487" data-offset-number="" data-offset-period="seconds" data-event="" id="" kjb-settings-id="sections_1604959182823_blocks_1605039643487_settings_btn_action" target="">Get Access</a>
+
+  </div>
+</div>
+<!-- Force Line Break -->
+<div class="block-break--1605039643487"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605044810374" data-section-id="1605044810374"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605044810374 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.5);
+  }
+  
+  .section--link_list.section--dark.section--1605044810374 a, .section--link_list.section--light.section--1605044810374 a, .section--blog_posts.section--dark.section--1605044810374 a, .section--blog_posts.section--light.section--1605044810374 a, .section--feature.section--dark.section--1605044810374 a, .section--feature.section--light.section--1605044810374 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1605044810374  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1605044810374_settings_section_reveal">
+  <div class="section section--custom_content section--middle section--center section--xs-small section--dark section--1605044810374 " kjb-settings-id="sections_1605044810374_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605046564304 {
+    text-align: left;
+  }
+  
+    .block-break--1605046564304 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605046564304"></div>
+
+<div class="col-md-6 block--1605046564304">
+  <div kjb-settings-id="sections_1605044810374_blocks_1605046564304_settings_text">
+    <h3>Practice your theory 50+ with coding problems</h3>
+<p>We have over 50 videos on different coding problems to help you reinforce your learning. Not only should you be familiar with the theory, but you also have to be able to apply them.</p>
+<h3>Check them out,&nbsp;<a href="https://www.jomaclass.com/blog?page=2&amp;tag=ds%26a">watch now</a>.</h3>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605046564304"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605046618163 {
+    text-align: center;
+  }
+  
+    .block-break--1605046618163 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+  <style>
+    .block--1605046618163 img {
+      display: inline-block;
+      
+    }
+  </style>
+
+<!-- Force Line Break -->
+<div class="block-break--1605046618163"></div>
+
+<div class="col-md-6 block--1605046618163">
+  
+    <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3006583/settings_images/t4lbcgVQRtaxtjV8O8kX_Screen_Shot_2020-11-10_at_7.31.43_PM.png" class="img-fluid" kjb-settings-id="sections_1605044810374_blocks_1605046618163_settings_image"/>
+  
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605046618163"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605020707259" data-section-id="1605020707259"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605020707259 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #191d21;
+  }
+  
+  .section--link_list.section--dark.section--1605020707259 a, .section--link_list.section--light.section--1605020707259 a, .section--blog_posts.section--dark.section--1605020707259 a, .section--blog_posts.section--light.section--1605020707259 a, .section--feature.section--dark.section--1605020707259 a, .section--feature.section--light.section--1605020707259 a {
+    
+  }
+</style>
+
+
+
+
+
+
+
+
+<div class="">
+  <div id="" class="section section--opt_in section--opt_in_bar section--middle section--xs-small section--dark section--1605020707259 " kjb-settings-id="sections_1605020707259_settings_background_color">
+    <div class="container">
+      <div class="row text-xs-center">
+        
+          
+          <div class="col-md-12 ">
+            <div kjb-settings-id="sections_1605020707259_settings_text" style="text-align: left">
+  <h3>Get&nbsp;free JomaClass&nbsp;videos</h3>
+<p>Enter your email and we&rsquo;ll send you <strong>Data Structures &amp; Algorithms</strong>&nbsp;videos and some samples of our favorite&nbsp;courses.</p>
+</div>
+
+            
+              
+
+<form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="https://www.jomaclass.com/forms/447347/form_submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="X3Jk4mC50uCELnHu6GGAlGFZHNi1rFv98KUm0o0xJQKZ72aDl43R863UhED2p7vvV0Mtobuyy5l5Wq5viGc79A==" /><input type="text" name="website_url" autofill="off" placeholder="Skip this field" style="display: none;" /><input type="hidden" name="kjb_fk_checksum" autofill="off" value="f45d9f84157c9593fed6da5db5d4f496" /><input type="hidden" name="form_submission[landing_page_id]" value="1718503" autofill="off" />
+  
+  
+  
+  
+  
+  
+
+  <style>
+    /*============================================================================
+      #Individual CTA Style
+    ==============================================================================*/
+    .btn--sections_1605020707259_settings_btn_text.btn--solid {
+      background: #34495e;
+      border-color: #34495e;
+      color: #fff;
+    }
+    .btn--sections_1605020707259_settings_btn_text.btn--outline {
+      border-color: #34495e;
+      color: #34495e;
+    }
+  </style>
+  <div class="section--top" kjb-settings-id="sections_1605020707259_settings_form" style="text-align: left">
+    <input type="hidden" name="thank_you_url" value="https://www.dropbox.com/s/m4fpc8mjzdqasfv/dsa_memory.mp4?dl=0">
+    
+      <div class="row optin optin--inline">
+        <div class="col-md-8">
+          <div class="email-field form-group"><input required="required" class="form-control" placeholder="Email" data-parsley-remote="true" data-parsley-remote-validator="kjb_email_validator" type="email" name="form_submission[email]" id="form_submission_email" /></div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn--sections_1605020707259_settings_btn_text btn--auto btn--solid btn-form" id="form-button" type="submit" kjb-settings-id="sections_1605020707259_settings_btn_text">Submit</button>
+        </div>
+      </div>
+    
+  </div>
+</form>
+
+            
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1526943163145" data-section-id="1526943163145"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1526943163145 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #000000;
+  }
+  
+  .section--link_list.section--dark.section--1526943163145 a, .section--link_list.section--light.section--1526943163145 a, .section--blog_posts.section--dark.section--1526943163145 a, .section--blog_posts.section--light.section--1526943163145 a, .section--feature.section--dark.section--1526943163145 a, .section--feature.section--light.section--1526943163145 a {
+    
+  }
+</style>
+
+
+<div class="">
+  <div id="" class="section section--feature section--top section--small section--dark section--1526943163145 " kjb-settings-id="sections_1526943163145_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading">
+
+  <div class="col-md-8">
+    
+      <h2 class="heading__title" kjb-settings-id="sections_1526943163145_settings_heading">Recommended for:</h2>
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1526943163145_0 img {
+      width: 50px;
+    }
+  </style>
+
+
+<div class="block--1526943163145_0" kjb-settings-id="sections_1526943163145_blocks_1526943163145_0_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/yDR1FW4qQ9aUgwqQRZBG_dhoFBkc2RA2tVAMZsFIS_noun_data_science_1657077_1.png" class="img-fluid" kjb-settings-id="sections_1526943163145_blocks_1526943163145_0_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1526943163145_blocks_1526943163145_0_settings_heading">Coding Interviews</h4>
+  
+  <div kjb-settings-id="sections_1526943163145_blocks_1526943163145_0_settings_text">
+    <p>Most technical interviews require you to solve brain teaser problems that are related to data structures and algorithms. They expect you to master them and be able to analyze the time and space complexity of your implementation.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1526943163145_1 img {
+      width: 50px;
+    }
+  </style>
+
+
+<div class="block--1526943163145_1" kjb-settings-id="sections_1526943163145_blocks_1526943163145_1_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/YK0o5ruCSk9lZYEukcxU_IGqfXmzTQeGQGHOA8LeY_noun_computer_science_1011195_2.png" class="img-fluid" kjb-settings-id="sections_1526943163145_blocks_1526943163145_1_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1526943163145_blocks_1526943163145_1_settings_heading">Computer Science Students</h4>
+  
+  <div kjb-settings-id="sections_1526943163145_blocks_1526943163145_1_settings_text">
+    <p>As a CS student, you'll eventually take a Data Structure or Algorithms course. With this course, you'll be able to complement your learning and maybe develop a deeper understanding of it with our intuitive animations.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+          
+            <div class="col-md-4">
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+
+
+
+<!-- Sets the Img Width If Setting Has Been Used -->
+
+  
+  <style>
+    .block--1526943163145_2 img {
+      width: 50px;
+    }
+  </style>
+
+
+<div class="block--1526943163145_2" kjb-settings-id="sections_1526943163145_blocks_1526943163145_2_settings_feature" style="text-align: center">
+  
+    
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/QUqhCJ8gTVGWGGZsegpG_C6hhpJpQzaFAK3QOesud_noun_web_development_3190682.png" class="img-fluid" kjb-settings-id="sections_1526943163145_blocks_1526943163145_2_settings_image"/>
+    
+    <h4 kjb-settings-id="sections_1526943163145_blocks_1526943163145_2_settings_heading">Competitive Programmers</h4>
+  
+  <div kjb-settings-id="sections_1526943163145_blocks_1526943163145_2_settings_text">
+    <p>If you want to become a competitive programmer, then you should learn the basics. Data structures and algorithms will the first techniques you'll learn before going into more advanced algorithms and techniques in competitive programming.</p>
+  </div>
+  
+</div>
+
+            </div>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605024154230" data-section-id="1605024154230"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605024154230 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.5);
+  }
+  
+  .section--link_list.section--dark.section--1605024154230 a, .section--link_list.section--light.section--1605024154230 a, .section--blog_posts.section--dark.section--1605024154230 a, .section--blog_posts.section--light.section--1605024154230 a, .section--feature.section--dark.section--1605024154230 a, .section--feature.section--light.section--1605024154230 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1605024154230  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1605024154230_settings_section_reveal">
+  <div class="section section--custom_content section--middle section--center section--xs-small section--dark section--1605024154230 " kjb-settings-id="sections_1605024154230_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605024173642 {
+    text-align: center;
+  }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605024173642"></div>
+
+<div class="col-md-12 block--1605024173642">
+  <div kjb-settings-id="sections_1605024154230_blocks_1605024173642_settings_code" class="fluid-video">
+    <style>
+hr {
+    border: 0;
+    height: 1px;
+    background: #666;
+}
+</style>
+<hr>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605024173642"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605024504137" data-section-id="1605024504137"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605024504137 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.5);
+  }
+  
+  .section--link_list.section--dark.section--1605024504137 a, .section--link_list.section--light.section--1605024504137 a, .section--blog_posts.section--dark.section--1605024504137 a, .section--blog_posts.section--light.section--1605024504137 a, .section--feature.section--dark.section--1605024504137 a, .section--feature.section--light.section--1605024504137 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1605024504137  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1605024504137_settings_section_reveal">
+  <div class="section section--custom_content section--top section--center section--xs-small section--dark section--1605024504137 " kjb-settings-id="sections_1605024504137_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605024504137_0 {
+    text-align: center;
+  }
+  
+    .block-break--1605024504137_0 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605024504137_0"></div>
+
+<div class="col-md-6 block--1605024504137_0">
+  <div kjb-settings-id="sections_1605024504137_blocks_1605024504137_0_settings_text">
+    <h4>What you'll learn&nbsp;in this class:</h4>
+<ul>
+<li style="text-align: left;">How to analyze programs in terms of time and space complexity with big O notations.</li>
+<li style="text-align: left;">Implement Abstract Data Types with various data structures and their pros and cons</li>
+<li style="text-align: left;">Most common algorithms to sort, search, and store elements</li>
+</ul>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605024504137_0"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605024523987 {
+    text-align: center;
+  }
+  
+    .block-break--1605024523987 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605024523987"></div>
+
+<div class="col-md-6 block--1605024523987">
+  <div kjb-settings-id="sections_1605024504137_blocks_1605024523987_settings_text">
+    <h4>Included in this class:</h4>
+<ul>
+<li style="text-align: left;">10&nbsp;high-quality lecture videos with intuitive animations</li>
+<li style="text-align: left;">50+ videos on coding problems and their solutions</li>
+<li style="text-align: left;">Access to your instructor to answer all your questions about the course content</li>
+</ul>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605024523987"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605024777470" data-section-id="1605024777470"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605024777470 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.5);
+  }
+  
+  .section--link_list.section--dark.section--1605024777470 a, .section--link_list.section--light.section--1605024777470 a, .section--blog_posts.section--dark.section--1605024777470 a, .section--blog_posts.section--light.section--1605024777470 a, .section--feature.section--dark.section--1605024777470 a, .section--feature.section--light.section--1605024777470 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1605024777470  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1605024777470_settings_section_reveal">
+  <div class="section section--custom_content section--middle section--center section--xs-small section--dark section--1605024777470 " kjb-settings-id="sections_1605024777470_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605024777470_0 {
+    text-align: center;
+  }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605024777470_0"></div>
+
+<div class="col-md-12 block--1605024777470_0">
+  <div kjb-settings-id="sections_1605024777470_blocks_1605024777470_0_settings_code" class="fluid-video">
+    <style>
+hr {
+    border: 0;
+    height: 1px;
+    background: #666;
+}
+</style>
+<hr>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605024777470_0"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605026349363" data-section-id="1605026349363"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605026349363 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #191e21;
+  }
+  
+  .section--link_list.section--dark.section--1605026349363 a, .section--link_list.section--light.section--1605026349363 a, .section--blog_posts.section--dark.section--1605026349363 a, .section--blog_posts.section--light.section--1605026349363 a, .section--feature.section--dark.section--1605026349363 a, .section--feature.section--light.section--1605026349363 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1605026349363  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1605026349363_settings_section_reveal">
+  <div class="section section--custom_content section--middle section--center section--xs-small section--dark section--1605026349363 " kjb-settings-id="sections_1605026349363_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605026349363_0 {
+    text-align: center;
+  }
+  
+    .block-break--1605026349363_0 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605026349363_0"></div>
+
+<div class="col-md-12 block--1605026349363_0">
+  <div kjb-settings-id="sections_1605026349363_blocks_1605026349363_0_settings_text">
+    <h3>Unlock all courses by joining JomaClass</h3>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605026349363_0"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605026555412 {
+    text-align: center;
+  }
+  
+    .block-break--1605026555412 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+  <style>
+    .block--1605026555412 img {
+      display: inline-block;
+      
+    }
+  </style>
+
+<!-- Force Line Break -->
+<div class="block-break--1605026555412"></div>
+
+<div class="col-md-4 block--1605026555412">
+  
+    <a href="/programming-fundamentals" target="">
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/JdcSacscQPa3kDdpxueE_Jqq1mwFQdK2plLyrit89_file.jpg" class="img-fluid" kjb-settings-id="sections_1605026349363_blocks_1605026555412_settings_image"/>
+    </a>
+  
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605026555412"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605026522716 {
+    text-align: center;
+  }
+  
+    .block-break--1605026522716 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+  <style>
+    .block--1605026522716 img {
+      display: inline-block;
+      
+    }
+  </style>
+
+<!-- Force Line Break -->
+<div class="block-break--1605026522716"></div>
+
+<div class="col-md-4 block--1605026522716">
+  
+    <a href="/data-structures-and-algorithms" target="">
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/eoQlm6PSi1kQ9XAbF8zQ_dsa.png" class="img-fluid" kjb-settings-id="sections_1605026349363_blocks_1605026522716_settings_image"/>
+    </a>
+  
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605026522716"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605026474867 {
+    text-align: center;
+  }
+  
+    .block-break--1605026474867 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+
+
+
+
+<!-- KJB Settings Variables -->
+
+
+  <style>
+    .block--1605026474867 img {
+      display: inline-block;
+      
+    }
+  </style>
+
+<!-- Force Line Break -->
+<div class="block-break--1605026474867"></div>
+
+<div class="col-md-4 block--1605026474867">
+  
+    <a href="/sql-data-analytics" target="">
+      <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/BfavzInGTTK4z02X1PEP_file.jpg" class="img-fluid" kjb-settings-id="sections_1605026349363_blocks_1605026474867_settings_image"/>
+    </a>
+  
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605026474867"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605021687991" data-section-id="1605021687991"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+    .background-image--1605021687991 {
+      background-image: url(https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3263477/assets/?16084822918323991);
+    }
+  
+  .section--1605021687991 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #000000;
+  }
+  
+  .section--link_list.section--dark.section--1605021687991 a, .section--link_list.section--light.section--1605021687991 a, .section--blog_posts.section--dark.section--1605021687991 a, .section--blog_posts.section--light.section--1605021687991 a, .section--feature.section--dark.section--1605021687991 a, .section--feature.section--light.section--1605021687991 a {
+    
+  }
+</style>
+
+
+<!-- Section Variables -->
+
+
+
+
+<div class="">
+  <div id="" class="section section--blog_posts section--top section--small section--dark section--1605021687991 " kjb-settings-id="sections_1605021687991_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading">
+
+  <div class="col-md-8">
+    
+      <h2 class="heading__title" kjb-settings-id="sections_1605021687991_settings_heading">Watch videos from other classes</h2>
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          <div class="col-md-3">
+            <div class="blog_post">
+  
+    
+      <a href="/blog/graph-depth-first-search"><img class="blog_post__img img-fluid" src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/27029/images/bR2VdoqzRvy65zGRM6BT_ae9d29e5cc40193aad950829a8a2caf5.jpg"></a>
+    
+  
+  
+    <h6 class="blog_post__date"><em>Dec 05, 2020</em></h6>
+    <h4 class="blog_post__title"><a href="/blog/graph-depth-first-search">Graph: Depth-first Search</a></h4>
+  
+</div>
+
+          </div>
+        
+          <div class="col-md-3">
+            <div class="blog_post">
+  
+    
+      <a href="/blog/graph-breadth-first-search"><img class="blog_post__img img-fluid" src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/27029/images/SZpMkySQKeWrRj4wXBOX_0eaf87a4d52a448f1c1de89ffa4bc325.jpg"></a>
+    
+  
+  
+    <h6 class="blog_post__date"><em>Dec 05, 2020</em></h6>
+    <h4 class="blog_post__title"><a href="/blog/graph-breadth-first-search">Graph: Breadth-first Search</a></h4>
+  
+</div>
+
+          </div>
+        
+          <div class="col-md-3">
+            <div class="blog_post">
+  
+    
+      <a href="/blog/graph-representation-edge-list-adjacency-matrix-and-adjacency-lists"><img class="blog_post__img img-fluid" src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/27029/images/FVKdPFTlTmyXQBiypTge_375dbebabc31445637557c91ec1fe4de.jpg"></a>
+    
+  
+  
+    <h6 class="blog_post__date"><em>Dec 05, 2020</em></h6>
+    <h4 class="blog_post__title"><a href="/blog/graph-representation-edge-list-adjacency-matrix-and-adjacency-lists">Graph Representation: Edge list, Adjacency Matrix, and Adjacency lists</a></h4>
+  
+</div>
+
+          </div>
+        
+          <div class="col-md-3">
+            <div class="blog_post">
+  
+    
+      <a href="/blog/graph"><img class="blog_post__img img-fluid" src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/blogs/27029/images/LU6ER5uTiYKYNsd6HXUA_f59ef787f0c5bc327ef6c6509798ad3d.jpg"></a>
+    
+  
+  
+    <h6 class="blog_post__date"><em>Dec 05, 2020</em></h6>
+    <h4 class="blog_post__title"><a href="/blog/graph">Graph</a></h4>
+  
+</div>
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605043424258" data-section-id="1605043424258"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605043424258 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.6);
+  }
+  
+  .section--link_list.section--dark.section--1605043424258 a, .section--link_list.section--light.section--1605043424258 a, .section--blog_posts.section--dark.section--1605043424258 a, .section--blog_posts.section--light.section--1605043424258 a, .section--feature.section--dark.section--1605043424258 a, .section--feature.section--light.section--1605043424258 a {
+    
+  }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /*============================================================================
+    #Individual CTA Style
+  ==============================================================================*/
+  .btn--solid.btn--1605043424258 {
+    background: #34495e;
+    border-color: #34495e;
+    color: #fff;
+  }
+  .btn--outline.btn--1605043424258 {
+    border-color: #34495e;
+    color: #34495e;
+  }
+</style>
+
+
+<div class="background-image background-image--1605043424258 ">
+  <div class="section section--cta section--middle section--xs-small section--dark section--1605043424258 " kjb-settings-id="sections_1605043424258_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        <div class="col-md-10">
+          <a href="/blog" class="btn btn-cta btn--auto btn--solid btn--med btn--1605043424258" data-offset-number="" data-offset-period="seconds" data-event="" id="" kjb-settings-id="sections_1605043424258_settings_btn_action" target="">See all videos</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605027482323" data-section-id="1605027482323"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605027482323 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.5);
+  }
+  
+  .section--link_list.section--dark.section--1605027482323 a, .section--link_list.section--light.section--1605027482323 a, .section--blog_posts.section--dark.section--1605027482323 a, .section--blog_posts.section--light.section--1605027482323 a, .section--feature.section--dark.section--1605027482323 a, .section--feature.section--light.section--1605027482323 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1605027482323  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1605027482323_settings_section_reveal">
+  <div class="section section--custom_content section--middle section--center section--xs-small section--dark section--1605027482323 " kjb-settings-id="sections_1605027482323_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605027482323_0 {
+    text-align: center;
+  }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605027482323_0"></div>
+
+<div class="col-md-12 block--1605027482323_0">
+  <div kjb-settings-id="sections_1605027482323_blocks_1605027482323_0_settings_code" class="fluid-video">
+    <style>
+hr {
+    border: 0;
+    height: 1px;
+    background: #666;
+}
+</style>
+<hr>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605027482323_0"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605025126635" data-section-id="1605025126635"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605025126635 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: rgba(0,0,0,.5);
+  }
+  
+  .section--link_list.section--dark.section--1605025126635 a, .section--link_list.section--light.section--1605025126635 a, .section--blog_posts.section--dark.section--1605025126635 a, .section--blog_posts.section--light.section--1605025126635 a, .section--feature.section--dark.section--1605025126635 a, .section--feature.section--light.section--1605025126635 a {
+    
+  }
+</style>
+
+<!-- Extra Settings Variables -->
+
+
+
+
+
+<!-- Kjb Settings Variables -->
+
+
+
+
+<div class="background-image background-image--1605025126635  timed-section" data-offset-number="" data-offset-period="seconds" data-event="" kjb-settings-id="sections_1605025126635_settings_section_reveal">
+  <div class="section section--custom_content section--middle section--center section--small section--dark section--1605025126635 " kjb-settings-id="sections_1605025126635_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading heading--empty">
+
+  <div class="col-md-8">
+    
+    
+  </div>
+</div>
+
+      <div class="row">
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605025837963 {
+    text-align: left;
+  }
+  
+    .block-break--1605025837963 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605025837963"></div>
+<div class="col-md-5 block--1605025837963">
+  
+    <div kjb-settings-id="sections_1605025126635_blocks_1605025837963_settings_text">
+      <h2>What's in every JomaClass subscription?</h2>
+    </div>
+  
+  <div kjb-settings-id="sections_1605025126635_blocks_1605025837963_settings_cta">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  /*============================================================================
+    #Individual CTA Style
+  ==============================================================================*/
+  .btn--solid.btn--1605025837963 {
+    background: #f1c40f !important;
+    border-color: #f1c40f !important;
+    color: #000000 !important;
+  }
+  .btn--solid.btn--1605025837963:hover {
+    color: #000000 !important;
+  }
+  .btn--outline.btn--1605025837963 {
+    border-color: #f1c40f !important;
+    color: #f1c40f !important;
+  }
+  .btn--outline.btn--1605025837963:hover {
+    color: #f1c40f !important;
+  }
+</style>
+<a href="#two-step" class="btn btn-cta btn--auto btn--solid btn--med btn--1605025837963" data-offset-number="" data-offset-period="seconds" data-event="" id="" kjb-settings-id="sections_1605025126635_blocks_1605025837963_settings_btn_action" target="">Get Access</a>
+
+  </div>
+</div>
+<!-- Force Line Break -->
+<div class="block-break--1605025837963"></div>
+
+            
+        
+          
+              <!-- Block Variables -->
+
+
+
+
+
+<style>
+  .block--1605025194408 {
+    text-align: left;
+  }
+  
+    .block-break--1605025194408 {
+      display: none;
+    }
+  
+</style>
+
+
+<!-- Block Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<!-- Force Line Break -->
+<div class="block-break--1605025194408"></div>
+
+<div class="col-md-6 block--1605025194408">
+  <div kjb-settings-id="sections_1605025126635_blocks_1605025194408_settings_code" class="fluid-video">
+    <ul class="d-flex flex-column flex-wrap" style="max-height: 200px;"><li style="--mc-scale-3-5: 1.4rem;
+--mc-scale-0: 0rem;
+--mc-scale-1: 0.4rem;
+--mc-scale-2: 0.8rem;
+--mc-scale-3: 1.2rem;
+--mc-scale-4: 1.6rem;
+--mc-scale-5: 2rem;
+--mc-scale-6: 2.4rem;
+--mc-scale-7: 2.8rem;
+--mc-scale-8: 3.2rem;
+--mc-scale-9: 4.8rem;
+--mc-scale-10: 6.4rem;
+--mc-scale-11: 8rem;
+--mc-scale-12: 9.6rem;
+--mc-theme-background: #000;
+--mc-theme-text: #fff;
+--mc-theme-text-hr-span-after: rgba(255, 255, 255, 0.3);
+--mc-theme-separator: rgba(255, 255, 255, 0.3);
+--mc-theme-border-contrast: rgba(255, 255, 255, 0.5);
+--mc-theme-border-contrast-hover: #fff;
+--mc-theme-applepay-border: none;
+--mc-theme-badge-bright-bg: #fff;
+--mc-theme-badge-bright-text: #000;
+--mc-theme-carousel-dot: #596170;
+--mc-theme-carousel-dot-active: #fff;
+--mc-theme-dropdown-backdrop: rgba(0, 0, 0, 0.9);
+--mc-theme-dropdown-border: #272c33;
+--mc-theme-dropdown-bg: #191c21;
+--mc-theme-dropdown-shadow: #000;
+--mc-theme-dropdown-hover-bg: #272c33;
+--mc-theme-tooltip-bg: #272c33;
+--mc-theme-tooltip-border: #596170;
+--mc-theme-tooltip-arrow: #596170;
+--mc-theme-tooltip-arrow-after: #272c33;
+--mc-theme-checkbox-bg: #191c21;
+--mc-theme-checkbox-border: #272c33;
+--mc-theme-checkbox-checked: #fff;
+--mc-theme-checkbox-active-border: #596170;
+--mc-theme-checkbox-dis-bg: #f3f3f3;
+--mc-theme-checkbox-dis-border: #dbdde1;
+--mc-theme-checkbox-dis-active-border: #272c33;
+--mc-theme-form-bg: #191c21;
+--mc-theme-form-border: #272c33;
+--mc-theme-form-elem-color: #fff;
+--mc-theme-form-elem-placehold-color: rgba(255, 255, 255, 0.5);
+--mc-theme-form-dis-bg: #272c33;
+--mc-theme-form-dis-border: none;
+--mc-theme-form-dis-active: none;
+--mc-theme-form-dis-elem: rgba(255, 255, 255, 0.5);
+--mc-theme-form-append: rgba(255, 255, 255, 0.3);
+--mc-theme-radio-bg: #191c21;
+--mc-theme-radio-border: #272c33;
+--mc-theme-radio-checked: #fff;
+--mc-theme-radio-dis-bg: var(--mc-theme-radio-bg);
+--mc-theme-radio-dis-border: none;
+--mc-theme-select-menu-bg: #191c21;
+--mc-theme-select-menu-border: #272c33;
+--mc-theme-select-option-bg: #272c33;
+color: var(--mc-theme-text);
+text-rendering: optimizeLegibility;
+letter-spacing: 0.01em;
+-webkit-font-smoothing: antialiased;
+list-style: none;
+-webkit-box-direction: normal !important;
+box-sizing: inherit;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+margin: var(--mc-scale-3);"class="mc-m-3"><svg style="--mc-scale-3-5: 1.4rem;
+--mc-scale-0: 0rem;
+--mc-scale-1: 0.4rem;
+--mc-scale-2: 0.8rem;
+--mc-scale-3: 1.2rem;
+--mc-scale-4: 1.6rem;
+--mc-scale-5: 2rem;
+--mc-scale-6: 2.4rem;
+--mc-scale-7: 2.8rem;
+--mc-scale-8: 3.2rem;
+--mc-scale-9: 4.8rem;
+--mc-scale-10: 6.4rem;
+--mc-scale-11: 8rem;
+--mc-scale-12: 9.6rem;
+--mc-theme-background: #000;
+--mc-theme-text: #fff;
+--mc-theme-text-hr-span-after: rgba(255, 255, 255, 0.3);
+--mc-theme-separator: rgba(255, 255, 255, 0.3);
+--mc-theme-border-contrast: rgba(255, 255, 255, 0.5);
+--mc-theme-border-contrast-hover: #fff;
+--mc-theme-applepay-border: none;
+--mc-theme-badge-bright-bg: #fff;
+--mc-theme-badge-bright-text: #000;
+--mc-theme-carousel-dot: #596170;
+--mc-theme-carousel-dot-active: #fff;
+--mc-theme-dropdown-backdrop: rgba(0, 0, 0, 0.9);
+--mc-theme-dropdown-border: #272c33;
+--mc-theme-dropdown-bg: #191c21;
+--mc-theme-dropdown-shadow: #000;
+--mc-theme-dropdown-hover-bg: #272c33;
+--mc-theme-tooltip-bg: #272c33;
+--mc-theme-tooltip-border: #596170;
+--mc-theme-tooltip-arrow: #596170;
+--mc-theme-tooltip-arrow-after: #272c33;
+--mc-theme-checkbox-bg: #191c21;
+--mc-theme-checkbox-border: #272c33;
+--mc-theme-checkbox-checked: #fff;
+--mc-theme-checkbox-active-border: #596170;
+--mc-theme-checkbox-dis-bg: #f3f3f3;
+--mc-theme-checkbox-dis-border: #dbdde1;
+--mc-theme-checkbox-dis-active-border: #272c33;
+--mc-theme-form-bg: #191c21;
+--mc-theme-form-border: #272c33;
+--mc-theme-form-elem-color: #fff;
+--mc-theme-form-elem-placehold-color: rgba(255, 255, 255, 0.5);
+--mc-theme-form-dis-bg: #272c33;
+--mc-theme-form-dis-border: none;
+--mc-theme-form-dis-active: none;
+--mc-theme-form-dis-elem: rgba(255, 255, 255, 0.5);
+--mc-theme-form-append: rgba(255, 255, 255, 0.3);
+--mc-theme-radio-bg: #191c21;
+--mc-theme-radio-border: #272c33;
+--mc-theme-radio-checked: #fff;
+--mc-theme-radio-dis-bg: var(--mc-theme-radio-bg);
+--mc-theme-radio-dis-border: none;
+--mc-theme-select-menu-bg: #191c21;
+--mc-theme-select-menu-border: #272c33;
+--mc-theme-select-option-bg: #272c33;
+color: var(--mc-theme-text);
+text-rendering: optimizeLegibility;
+letter-spacing: 0.01em;
+list-style: none;
+-webkit-box-direction: normal !important;
+font: inherit;
+width: 2em;
+height: 2em;
+fill: none;
+box-sizing: inherit;
+vertical-align: middle;
+font-family: mc-socials!important;
+speak: none;
+font-style: normal;
+font-weight: 400;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+font-size: var(--mc-scale-3);
+opacity: 0.8 !important;
+margin-right: var(--mc-scale-3);" width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-icon--3 mc-opacity--hinted mc-mr-3"><path d="M4 17.2a1.2 1.2 0 112.4 0 1.2 1.2 0 01-2.4 0zM4 11.92a1.2 1.2 0 112.4 0 1.2 1.2 0 01-2.4 0z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4 6.8a1.2 1.2 0 112.4 0 1.2 1.2 0 01-2.4 0zM9.6 17.2a.8.8 0 01.8-.8h8.8a.8.8 0 010 1.6h-8.8a.8.8 0 01-.8-.8zM9.6 6.8a.8.8 0 01.8-.8h8.8a.8.8 0 010 1.6h-8.8a.8.8 0 01-.8-.8zM9.6 12a.8.8 0 01.8-.8h8.8a.8.8 0 010 1.6h-8.8a.8.8 0 01-.8-.8z" fill="currentColor"></path></svg>Access to Joma for mentorship through private forum</li><li style="--mc-scale-3-5: 1.4rem;
+--mc-scale-0: 0rem;
+--mc-scale-1: 0.4rem;
+--mc-scale-2: 0.8rem;
+--mc-scale-3: 1.2rem;
+--mc-scale-4: 1.6rem;
+--mc-scale-5: 2rem;
+--mc-scale-6: 2.4rem;
+--mc-scale-7: 2.8rem;
+--mc-scale-8: 3.2rem;
+--mc-scale-9: 4.8rem;
+--mc-scale-10: 6.4rem;
+--mc-scale-11: 8rem;
+--mc-scale-12: 9.6rem;
+--mc-theme-background: #000;
+--mc-theme-text: #fff;
+--mc-theme-text-hr-span-after: rgba(255, 255, 255, 0.3);
+--mc-theme-separator: rgba(255, 255, 255, 0.3);
+--mc-theme-border-contrast: rgba(255, 255, 255, 0.5);
+--mc-theme-border-contrast-hover: #fff;
+--mc-theme-applepay-border: none;
+--mc-theme-badge-bright-bg: #fff;
+--mc-theme-badge-bright-text: #000;
+--mc-theme-carousel-dot: #596170;
+--mc-theme-carousel-dot-active: #fff;
+--mc-theme-dropdown-backdrop: rgba(0, 0, 0, 0.9);
+--mc-theme-dropdown-border: #272c33;
+--mc-theme-dropdown-bg: #191c21;
+--mc-theme-dropdown-shadow: #000;
+--mc-theme-dropdown-hover-bg: #272c33;
+--mc-theme-tooltip-bg: #272c33;
+--mc-theme-tooltip-border: #596170;
+--mc-theme-tooltip-arrow: #596170;
+--mc-theme-tooltip-arrow-after: #272c33;
+--mc-theme-checkbox-bg: #191c21;
+--mc-theme-checkbox-border: #272c33;
+--mc-theme-checkbox-checked: #fff;
+--mc-theme-checkbox-active-border: #596170;
+--mc-theme-checkbox-dis-bg: #f3f3f3;
+--mc-theme-checkbox-dis-border: #dbdde1;
+--mc-theme-checkbox-dis-active-border: #272c33;
+--mc-theme-form-bg: #191c21;
+--mc-theme-form-border: #272c33;
+--mc-theme-form-elem-color: #fff;
+--mc-theme-form-elem-placehold-color: rgba(255, 255, 255, 0.5);
+--mc-theme-form-dis-bg: #272c33;
+--mc-theme-form-dis-border: none;
+--mc-theme-form-dis-active: none;
+--mc-theme-form-dis-elem: rgba(255, 255, 255, 0.5);
+--mc-theme-form-append: rgba(255, 255, 255, 0.3);
+--mc-theme-radio-bg: #191c21;
+--mc-theme-radio-border: #272c33;
+--mc-theme-radio-checked: #fff;
+--mc-theme-radio-dis-bg: var(--mc-theme-radio-bg);
+--mc-theme-radio-dis-border: none;
+--mc-theme-select-menu-bg: #191c21;
+--mc-theme-select-menu-border: #272c33;
+--mc-theme-select-option-bg: #272c33;
+color: var(--mc-theme-text);
+text-rendering: optimizeLegibility;
+letter-spacing: 0.01em;
+-webkit-font-smoothing: antialiased;
+list-style: none;
+-webkit-box-direction: normal !important;
+box-sizing: inherit;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+margin: var(--mc-scale-3);"class="mc-m-3"><svg style="--mc-scale-3-5: 1.4rem;
+--mc-scale-0: 0rem;
+--mc-scale-1: 0.4rem;
+--mc-scale-2: 0.8rem;
+--mc-scale-3: 1.2rem;
+--mc-scale-4: 1.6rem;
+--mc-scale-5: 2rem;
+--mc-scale-6: 2.4rem;
+--mc-scale-7: 2.8rem;
+--mc-scale-8: 3.2rem;
+--mc-scale-9: 4.8rem;
+--mc-scale-10: 6.4rem;
+--mc-scale-11: 8rem;
+--mc-scale-12: 9.6rem;
+--mc-theme-background: #000;
+--mc-theme-text: #fff;
+--mc-theme-text-hr-span-after: rgba(255, 255, 255, 0.3);
+--mc-theme-separator: rgba(255, 255, 255, 0.3);
+--mc-theme-border-contrast: rgba(255, 255, 255, 0.5);
+--mc-theme-border-contrast-hover: #fff;
+--mc-theme-applepay-border: none;
+--mc-theme-badge-bright-bg: #fff;
+--mc-theme-badge-bright-text: #000;
+--mc-theme-carousel-dot: #596170;
+--mc-theme-carousel-dot-active: #fff;
+--mc-theme-dropdown-backdrop: rgba(0, 0, 0, 0.9);
+--mc-theme-dropdown-border: #272c33;
+--mc-theme-dropdown-bg: #191c21;
+--mc-theme-dropdown-shadow: #000;
+--mc-theme-dropdown-hover-bg: #272c33;
+--mc-theme-tooltip-bg: #272c33;
+--mc-theme-tooltip-border: #596170;
+--mc-theme-tooltip-arrow: #596170;
+--mc-theme-tooltip-arrow-after: #272c33;
+--mc-theme-checkbox-bg: #191c21;
+--mc-theme-checkbox-border: #272c33;
+--mc-theme-checkbox-checked: #fff;
+--mc-theme-checkbox-active-border: #596170;
+--mc-theme-checkbox-dis-bg: #f3f3f3;
+--mc-theme-checkbox-dis-border: #dbdde1;
+--mc-theme-checkbox-dis-active-border: #272c33;
+--mc-theme-form-bg: #191c21;
+--mc-theme-form-border: #272c33;
+--mc-theme-form-elem-color: #fff;
+--mc-theme-form-elem-placehold-color: rgba(255, 255, 255, 0.5);
+--mc-theme-form-dis-bg: #272c33;
+--mc-theme-form-dis-border: none;
+--mc-theme-form-dis-active: none;
+--mc-theme-form-dis-elem: rgba(255, 255, 255, 0.5);
+--mc-theme-form-append: rgba(255, 255, 255, 0.3);
+--mc-theme-radio-bg: #191c21;
+--mc-theme-radio-border: #272c33;
+--mc-theme-radio-checked: #fff;
+--mc-theme-radio-dis-bg: var(--mc-theme-radio-bg);
+--mc-theme-radio-dis-border: none;
+--mc-theme-select-menu-bg: #191c21;
+--mc-theme-select-menu-border: #272c33;
+--mc-theme-select-option-bg: #272c33;
+color: var(--mc-theme-text);
+text-rendering: optimizeLegibility;
+letter-spacing: 0.01em;
+list-style: none;
+-webkit-box-direction: normal !important;
+font: inherit;
+width: 2em;
+height: 2em;
+fill: none;
+box-sizing: inherit;
+vertical-align: middle;
+font-family: mc-socials!important;
+speak: none;
+font-style: normal;
+font-weight: 400;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+font-size: var(--mc-scale-3);
+opacity: 0.8 !important;
+margin-right: var(--mc-scale-3);" width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-icon--3 mc-opacity--hinted mc-mr-3"><path fill-rule="evenodd" clip-rule="evenodd" d="M9.16 5.429a.647.647 0 00-.651.642V6.5c0 .394-.345.714-.77.714-.424 0-.769-.32-.769-.714v-.429C6.97 4.947 7.93 4 9.16 4h10.65C21.04 4 22 4.947 22 6.071v6.108c0 1.124-.96 2.071-2.19 2.071h-.502c-.425 0-.77-.32-.77-.714 0-.395.345-.715.77-.715h.503c.338 0 .65-.268.65-.642V6.07a.647.647 0 00-.65-.642H9.16zM2 10.82c0-1.124.96-2.071 2.19-2.071h10.65c1.23 0 2.19.947 2.19 2.071v6.108c0 1.124-.96 2.071-2.19 2.071H4.19C2.96 19 2 18.053 2 16.929V10.82zm2.19-.642a.647.647 0 00-.652.642v6.108c0 .374.313.642.651.642H14.84c.339 0 .651-.268.651-.642V10.82a.647.647 0 00-.65-.642H4.188z" fill="currentColor"></path></svg>All 80+ high quality videos from other classes</li><li style="--mc-scale-3-5: 1.4rem;
+--mc-scale-0: 0rem;
+--mc-scale-1: 0.4rem;
+--mc-scale-2: 0.8rem;
+--mc-scale-3: 1.2rem;
+--mc-scale-4: 1.6rem;
+--mc-scale-5: 2rem;
+--mc-scale-6: 2.4rem;
+--mc-scale-7: 2.8rem;
+--mc-scale-8: 3.2rem;
+--mc-scale-9: 4.8rem;
+--mc-scale-10: 6.4rem;
+--mc-scale-11: 8rem;
+--mc-scale-12: 9.6rem;
+--mc-theme-background: #000;
+--mc-theme-text: #fff;
+--mc-theme-text-hr-span-after: rgba(255, 255, 255, 0.3);
+--mc-theme-separator: rgba(255, 255, 255, 0.3);
+--mc-theme-border-contrast: rgba(255, 255, 255, 0.5);
+--mc-theme-border-contrast-hover: #fff;
+--mc-theme-applepay-border: none;
+--mc-theme-badge-bright-bg: #fff;
+--mc-theme-badge-bright-text: #000;
+--mc-theme-carousel-dot: #596170;
+--mc-theme-carousel-dot-active: #fff;
+--mc-theme-dropdown-backdrop: rgba(0, 0, 0, 0.9);
+--mc-theme-dropdown-border: #272c33;
+--mc-theme-dropdown-bg: #191c21;
+--mc-theme-dropdown-shadow: #000;
+--mc-theme-dropdown-hover-bg: #272c33;
+--mc-theme-tooltip-bg: #272c33;
+--mc-theme-tooltip-border: #596170;
+--mc-theme-tooltip-arrow: #596170;
+--mc-theme-tooltip-arrow-after: #272c33;
+--mc-theme-checkbox-bg: #191c21;
+--mc-theme-checkbox-border: #272c33;
+--mc-theme-checkbox-checked: #fff;
+--mc-theme-checkbox-active-border: #596170;
+--mc-theme-checkbox-dis-bg: #f3f3f3;
+--mc-theme-checkbox-dis-border: #dbdde1;
+--mc-theme-checkbox-dis-active-border: #272c33;
+--mc-theme-form-bg: #191c21;
+--mc-theme-form-border: #272c33;
+--mc-theme-form-elem-color: #fff;
+--mc-theme-form-elem-placehold-color: rgba(255, 255, 255, 0.5);
+--mc-theme-form-dis-bg: #272c33;
+--mc-theme-form-dis-border: none;
+--mc-theme-form-dis-active: none;
+--mc-theme-form-dis-elem: rgba(255, 255, 255, 0.5);
+--mc-theme-form-append: rgba(255, 255, 255, 0.3);
+--mc-theme-radio-bg: #191c21;
+--mc-theme-radio-border: #272c33;
+--mc-theme-radio-checked: #fff;
+--mc-theme-radio-dis-bg: var(--mc-theme-radio-bg);
+--mc-theme-radio-dis-border: none;
+--mc-theme-select-menu-bg: #191c21;
+--mc-theme-select-menu-border: #272c33;
+--mc-theme-select-option-bg: #272c33;
+color: var(--mc-theme-text);
+text-rendering: optimizeLegibility;
+letter-spacing: 0.01em;
+-webkit-font-smoothing: antialiased;
+list-style: none;
+-webkit-box-direction: normal !important;
+box-sizing: inherit;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+margin: var(--mc-scale-3);"class="mc-m-3"><svg style="--mc-scale-3-5: 1.4rem;
+--mc-scale-0: 0rem;
+--mc-scale-1: 0.4rem;
+--mc-scale-2: 0.8rem;
+--mc-scale-3: 1.2rem;
+--mc-scale-4: 1.6rem;
+--mc-scale-5: 2rem;
+--mc-scale-6: 2.4rem;
+--mc-scale-7: 2.8rem;
+--mc-scale-8: 3.2rem;
+--mc-scale-9: 4.8rem;
+--mc-scale-10: 6.4rem;
+--mc-scale-11: 8rem;
+--mc-scale-12: 9.6rem;
+--mc-theme-background: #000;
+--mc-theme-text: #fff;
+--mc-theme-text-hr-span-after: rgba(255, 255, 255, 0.3);
+--mc-theme-separator: rgba(255, 255, 255, 0.3);
+--mc-theme-border-contrast: rgba(255, 255, 255, 0.5);
+--mc-theme-border-contrast-hover: #fff;
+--mc-theme-applepay-border: none;
+--mc-theme-badge-bright-bg: #fff;
+--mc-theme-badge-bright-text: #000;
+--mc-theme-carousel-dot: #596170;
+--mc-theme-carousel-dot-active: #fff;
+--mc-theme-dropdown-backdrop: rgba(0, 0, 0, 0.9);
+--mc-theme-dropdown-border: #272c33;
+--mc-theme-dropdown-bg: #191c21;
+--mc-theme-dropdown-shadow: #000;
+--mc-theme-dropdown-hover-bg: #272c33;
+--mc-theme-tooltip-bg: #272c33;
+--mc-theme-tooltip-border: #596170;
+--mc-theme-tooltip-arrow: #596170;
+--mc-theme-tooltip-arrow-after: #272c33;
+--mc-theme-checkbox-bg: #191c21;
+--mc-theme-checkbox-border: #272c33;
+--mc-theme-checkbox-checked: #fff;
+--mc-theme-checkbox-active-border: #596170;
+--mc-theme-checkbox-dis-bg: #f3f3f3;
+--mc-theme-checkbox-dis-border: #dbdde1;
+--mc-theme-checkbox-dis-active-border: #272c33;
+--mc-theme-form-bg: #191c21;
+--mc-theme-form-border: #272c33;
+--mc-theme-form-elem-color: #fff;
+--mc-theme-form-elem-placehold-color: rgba(255, 255, 255, 0.5);
+--mc-theme-form-dis-bg: #272c33;
+--mc-theme-form-dis-border: none;
+--mc-theme-form-dis-active: none;
+--mc-theme-form-dis-elem: rgba(255, 255, 255, 0.5);
+--mc-theme-form-append: rgba(255, 255, 255, 0.3);
+--mc-theme-radio-bg: #191c21;
+--mc-theme-radio-border: #272c33;
+--mc-theme-radio-checked: #fff;
+--mc-theme-radio-dis-bg: var(--mc-theme-radio-bg);
+--mc-theme-radio-dis-border: none;
+--mc-theme-select-menu-bg: #191c21;
+--mc-theme-select-menu-border: #272c33;
+--mc-theme-select-option-bg: #272c33;
+color: var(--mc-theme-text);
+text-rendering: optimizeLegibility;
+letter-spacing: 0.01em;
+list-style: none;
+-webkit-box-direction: normal !important;
+font: inherit;
+width: 2em;
+height: 2em;
+fill: none;
+box-sizing: inherit;
+vertical-align: middle;
+font-family: mc-socials!important;
+speak: none;
+font-style: normal;
+font-weight: 400;
+font-variant: normal;
+text-transform: none;
+line-height: 1;
+-webkit-font-smoothing: antialiased;
+font-size: var(--mc-scale-3);
+opacity: 0.8 !important;
+margin-right: var(--mc-scale-3);" width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-icon--3 mc-opacity--hinted mc-mr-3"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 4.875a.75.75 0 01.648.372l1.994 3.414 3.893.85a.75.75 0 01.395 1.238l-2.646 2.905.414 3.892a.75.75 0 01-1.042.768L12 16.744l-3.656 1.57a.75.75 0 01-1.042-.768l.414-3.892L5.07 10.75a.75.75 0 01.395-1.238l3.893-.85 1.994-3.414A.75.75 0 0112 4.875zm0 2.237l-1.512 2.59a.75.75 0 01-.488.354l-2.946.643 1.998 2.195a.75.75 0 01.191.584L8.93 16.43l2.775-1.192a.75.75 0 01.592 0l2.775 1.192-.314-2.952a.75.75 0 01.191-.584l1.998-2.195L14 10.056a.75.75 0 01-.488-.355L12 7.112z" fill="currentColor"></path></svg>New videos added every week</li></ul>
+  </div>
+</div>
+
+<!-- Force Line Break -->
+<div class="block-break--1605025194408"></div>
+
+            
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><div id="section-1605021267526" data-section-id="1605021267526"><!-- Section Virables -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contitional Section Virables -->
+
+
+<!-- Kjb Section Variabels -->
+
+
+<style>
+  
+  .section--1605021267526 {
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    background: #000000;
+  }
+  
+  .section--link_list.section--dark.section--1605021267526 a, .section--link_list.section--light.section--1605021267526 a, .section--blog_posts.section--dark.section--1605021267526 a, .section--blog_posts.section--light.section--1605021267526 a, .section--feature.section--dark.section--1605021267526 a, .section--feature.section--light.section--1605021267526 a {
+    
+  }
+</style>
+
+
+<!-- Section Variables -->
+
+
+<!-- KJB Settings Variables -->
+
+
+<div class="">
+  <div id="" class="section section--accordion section--middle section--small section--dark section--1605021267526 " kjb-settings-id="sections_1605021267526_settings_background_color">
+    <div class="container">
+      
+  <div class="row heading">
+
+  <div class="col-md-8">
+    
+      <h2 class="heading__title" kjb-settings-id="sections_1605021267526_settings_heading">Frequently Asked Questions</h2>
+    
+    
+  </div>
+</div>
+
+      <div class="row text-xs-center">
+        <div class="col-md-10">
+          <div class="accordion" id="accordion-1605021267526" role="tablist" aria-multiselectable="true">
+            
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+<div class="accordion__item panel section--dark" style="background: #191d21;">
+  <a class="accordion__title" data-toggle="collapse" href="#accordion-item-1605021267526_0" aria-expanded="false" aria-controls="accordion-item-1605021267526_0" kjb-settings-id="sections_1605021267526_blocks_1605021267526_0_settings_accordion_trigger" style="color:;">
+    <i class="accordion__icon"></i>
+    What is JomaClass?
+  </a>
+  <div class="collapse show" id="accordion-item-1605021267526_0" role="tabpanel" data-parent="#accordion-1605021267526">
+    <div class="accordion__body" kjb-settings-id="sections_1605021267526_blocks_1605021267526_0_settings_accordion_body" style="color:;">
+      <p>Think of it like a Patreon subscription where you get access to all my educational videos on programming, computer science, and data science. I make sure to teach the right things in the right order since a lot of students tend to give up or they don't build the right foundations.</p>
+<p>I post multiple videos weekly and I'm constantly working on a new course. In addition, you have full access to a private group where you can interact with me and other students in the community.</p>
+    </div>
+  </div>
+</div>
+
+            
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+<div class="accordion__item panel section--dark" style="background: #191d21;">
+  <a class="accordion__title" data-toggle="collapse" href="#accordion-item-1605021267526_1" aria-expanded="false" aria-controls="accordion-item-1605021267526_1" kjb-settings-id="sections_1605021267526_blocks_1605021267526_1_settings_accordion_trigger" style="color:;">
+    <i class="accordion__icon"></i>
+    How much does the JomaClass subscription cost?
+  </a>
+  <div class="collapse show" id="accordion-item-1605021267526_1" role="tabpanel" data-parent="#accordion-1605021267526">
+    <div class="accordion__body" kjb-settings-id="sections_1605021267526_blocks_1605021267526_1_settings_accordion_body" style="color:;">
+      <p>$8/month paid yearly.</p>
+    </div>
+  </div>
+</div>
+
+            
+              <!-- Block Variables -->
+
+
+
+
+
+
+
+
+
+<div class="accordion__item panel section--dark" style="background: #191d21;">
+  <a class="accordion__title" data-toggle="collapse" href="#accordion-item-1605021267526_2" aria-expanded="false" aria-controls="accordion-item-1605021267526_2" kjb-settings-id="sections_1605021267526_blocks_1605021267526_2_settings_accordion_trigger" style="color:;">
+    <i class="accordion__icon"></i>
+    How many lessons are in the course?
+  </a>
+  <div class="collapse show" id="accordion-item-1605021267526_2" role="tabpanel" data-parent="#accordion-1605021267526">
+    <div class="accordion__body" kjb-settings-id="sections_1605021267526_blocks_1605021267526_2_settings_accordion_body" style="color:;">
+      <p>A typical course will have around 20 video lessons.</p>
+    </div>
+  </div>
+</div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div></div>
+          <div id="section-footer" data-section-id="footer">
+
+
+
+<style>
+  .footer {
+    background: #272d34;
+  }
+  
+</style>
+
+
+
+</div>
+        </div>
+      </div>
+    </div>
+    <div id="section-pop_exit" data-section-id="pop_exit">
+
+  
+
+
+
+  
+
+
+</div>
+    <div id="section-pop_two_step" data-section-id="pop_two_step">
+
+
+
+
+
+
+  
+
+
+<style>
+  #two-step {
+    display: none;
+    /*============================================================================
+      #Background Color Override
+    ==============================================================================*/
+    
+      /*============================================================================
+        #Text Color Override
+      ==============================================================================*/
+      color: ;
+    
+  }
+</style>
+
+<div id="two-step" class="pop pop--light">
+  <div class="pop__content">
+    <div class="pop__inner">
+      <div class="pop__body" style="background: #fff;">
+        <a class="pop__close">
+          Close
+        </a>
+        
+          <img src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/2997963/settings_images/cS18IhpQiS3zWRVurMkF_file.jpg" class="img-fluid" kjb-settings-id="sections_pop_two_step_settings_image"/>
+        
+        <div class="pop__body--inner">
+          
+            <div class="block--1605025441141">
+              
+                  
+
+
+
+
+<style>
+  .block--1605025441141 .progress-wrapper .progress-bar {
+    width: 50%;
+    background-color: #2e91fc;
+  }
+  .block--1605025441141 .progress-wrapper .progress {
+    background-color: #f9f9f9;
+  }
+</style>
+
+<div class="progress-wrapper" kjb-settings-id="sections_pop_two_step_blocks_1605025441141_settings_show_progress">
+  <p class="progress-percent" kjb-settings-id="sections_pop_two_step_blocks_1605025441141_settings_progress_text">50% Complete</p>
+  <div class="progress">
+    <div class="progress-bar progress-bar-striped" kjb-settings-id="sections_pop_two_step_blocks_1605025441141_settings_progress_percent"></div>
+  </div>
+</div>
+
+                
+            </div>
+          
+            <div class="block--1605025507702">
+              
+                  <div kjb-settings-id="sections_pop_two_step_blocks_1605025507702_settings_text">
+  <h3>Unlock All Videos and Courses</h3>
+<p>Create your account to get started.</p>
+</div>
+
+              
+            </div>
+          
+          
+  <form data-parsley-validate="true" data-kjb-disable-on-submit="true" action="https://www.jomaclass.com/forms/415954/form_submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="X3Jk4mC50uCELnHu6GGAlGFZHNi1rFv98KUm0o0xJQKZ72aDl43R863UhED2p7vvV0Mtobuyy5l5Wq5viGc79A==" /><input type="text" name="website_url" autofill="off" placeholder="Skip this field" style="display: none;" /><input type="hidden" name="kjb_fk_checksum" autofill="off" value="d5711217d186fe9fa581cfb09bed4f0d" /><input type="hidden" name="form_submission[landing_page_id]" value="1718503" autofill="off" />
+    
+    
+    
+    
+    
+    
+    
+    
+
+    <style>
+      /*============================================================================
+        #Individual CTA Style
+      ==============================================================================*/
+      .btn--sections_pop_two_step_settings_btn_text.btn--solid {
+        background: #2e91fc;
+        border-color: #2e91fc;
+        color: #fff;
+      }
+      .btn--sections_pop_two_step_settings_btn_text.btn--outline {
+        border-color: #2e91fc;
+        color: #2e91fc;
+      }
+    </style>
+    <div class="pop__form" kjb-settings-id="sections_pop_two_step_settings_form">
+      <input type="hidden" name="thank_you_url" value="/store">
+      <div class="row optin optin--stacked">
+        
+          <div class="col-md-12">
+            <div class="email-field form-group"><input required="required" class="form-control" placeholder="Email" data-parsley-remote="true" data-parsley-remote-validator="kjb_email_validator" type="email" name="form_submission[email]" id="form_submission_email" /></div>
+          </div>
+        
+        <div class="col-md-12">
+          <button class="btn btn--sections_pop_two_step_settings_btn_text btn--block btn--solid btn-form" id="form-button" type="submit" kjb-settings-id="sections_pop_two_step_settings_btn_text">SIGN UP</button>
+        </div>
+      </div>
+    </div>
+  </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    <!-- Javascripts ================================================== -->
+    <script src="https://kajabi-app-assets.global.ssl.fastly.net/assets/core-25b3510c97d63b60da8111bab0c6fc013d2ead72183b612c2eaeaafb41fd604d.js"></script>
+    <script charset='ISO-8859-1' src='https://fast.wistia.com/assets/external/E-v1.js'></script>
+    <script charset='ISO-8859-1' src='https://fast.wistia.com/labs/crop-fill/plugin.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ouibounce/0.0.12/ouibounce.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="https://kajabi-storefronts-production.global.ssl.fastly.net/kajabi-storefronts-production/themes/3263477/assets/scripts.js?16084822918323991"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.8/js/tether.min.js"></script><!-- Tether for Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+  </body>
+</html>

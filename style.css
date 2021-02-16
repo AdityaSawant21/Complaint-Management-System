@@ -1,0 +1,146 @@
+body {
+  background-repeat: no repeat;
+  background-size: cover;
+  background-position: center;
+}
+#title {
+  background-image: url("li.jpg");
+}
+h1 {
+  padding-top: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  padding-left: 180px;
+  color: blue;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+#p {
+  color: back;
+  background-color: Yellow;
+}
+#div1 {
+  background-color: #33ffff;
+  font-family: Serif, Times New Roman, Georgia;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+}
+
+img {
+  height: 300px;
+  width: 550px;
+}
+#MyNav {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+}
+li {
+  display: inline;
+  padding: 10px;
+}
+a {
+  display: inline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+a:hover {
+  display: inline-block;
+  background-color: #fc4a14;
+}
+
+#dd {
+  background-color: White;
+}
+#lst {
+  background-color: DimGrey;
+  padding-bottom: 150px;
+  padding-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#im {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+#srt {
+  background-color: #99ffff;
+  height: 0%;
+  display: inline-block;
+  width: 100%;
+  bottom: 2%;
+  margin-left: 0%;
+}
+
+#HeaderImg1 {
+  background-color: #ffffff;
+  height: 100%;
+  display: inline-block;
+  width: 5%;
+  bottom: 15%;
+  margin-left: 2%;
+}
+
+img {
+  height: 200px;
+  width: 250px;
+}
+#MyHeaderSearch {
+  background-color: #33ffff;
+  display: inline-block;
+  top: 7%;
+  right: 0.5%;
+  float: left;
+  position: fixed;
+
+  border: 3px solid #000000;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+#sep {
+  background-color: Cornsilk;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+input[type="submit"] {
+  background-color: Green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: DarkGreen;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 15px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 15px;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#butn {
+  margin: 0 auto;
+  display: block;
+}
