@@ -3,6 +3,14 @@
 * This system can be used for the crime files of the police department to manage the records of different activities related to information reports.
 * This portal addresses the problems by letting the public complain online and computerized management of these complaints along with maintaining records of FIR.
 * To make complaining easy and manage crime records, this portal is very helpful.
+## TECH/FRAMEWORK USED:
+* HTML
+* CSS
+* Javascript
+* PHP
+* Xampp Server
+
+## Screenshot of Output:
 ![image](https://user-images.githubusercontent.com/60505090/108099384-8a2eb480-70aa-11eb-881c-d36f42094ad4.png)
 ![image](https://user-images.githubusercontent.com/60505090/108099532-be09da00-70aa-11eb-86b4-cad240313b78.png)
 ![image](https://user-images.githubusercontent.com/60505090/108099636-e4c81080-70aa-11eb-88c5-e5e633ec8b01.png)
