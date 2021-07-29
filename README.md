@@ -9,6 +9,7 @@
 * Javascript
 * PHP
 * Xampp Server
+* MySQL
 
 ## Screenshot of Output:
 ![image](https://user-images.githubusercontent.com/60505090/108099384-8a2eb480-70aa-11eb-881c-d36f42094ad4.png)
