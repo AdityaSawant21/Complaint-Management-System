@@ -23,3 +23,7 @@
 ![image](https://user-images.githubusercontent.com/60505090/108100320-c1ea2c00-70ab-11eb-901d-56e020dfa578.png)
 ![image](https://user-images.githubusercontent.com/60505090/108100437-ec3be980-70ab-11eb-967b-c5c37ed810df.png)
 ![image](https://user-images.githubusercontent.com/60505090/108100505-01187d00-70ac-11eb-814f-b72620873633.png)
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
